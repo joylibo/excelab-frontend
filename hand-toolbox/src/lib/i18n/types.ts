@@ -1,0 +1,215 @@
+export type Language = "zh-CN" | "zh-TW" | "en" | "ja"
+
+export interface Translation {
+  common: {
+    appName: string
+    upload: string
+    download: string
+    clear: string
+    cancel: string
+    confirm: string
+    loading: string
+    error: string
+    success: string
+    file: string
+    files: string
+    size: string
+    name: string
+    type: string
+    actions: string
+    dragAndDrop: string
+    clickToSelect: string
+    or: string
+    supportedFormats: string
+    maxSize: string
+    maxFiles: string
+    statistics: string
+    selectedFiles: string
+  }
+  header: {
+    tables: string
+    docs: string
+    images: string
+    about: string
+    testConnection: string
+  }
+  tables: {
+    merge: {
+      title: string
+      description: string
+      keepAllColumns: string
+      keepAllColumnsDescription: string
+      keepCommonColumns: string
+      keepCommonColumnsDescription: string
+      optionsTitle: string
+      optionsDescription: string
+    }
+    split: {
+      title: string
+      description: string
+      splitByColumn: string
+      selectColumn: string
+    }
+    clean: {
+      title: string
+      description: string
+      removeEmptyRows: string
+      removeEmptyColumns: string
+      trimSpaces: string
+      optionsTitle: string
+      optionsDescription: string
+    }
+    deduplicate: {
+      title: string
+      description: string
+      deduplicateBy: string
+      method: string
+      random: string
+      max: string
+      min: string
+      valueField: string
+      valueFieldDescription: string
+      originalRows: string
+      deduplicatedRows: string
+      optionsTitle: string
+      optionsDescription: string
+    }
+  }
+  docs: {
+    pdfToImages: {
+      title: string
+      description: string
+      format: string
+      jpeg: string
+      png: string
+      uploadDescription: string
+      formatOptions: string
+      formatSelect: string
+      formatPlaceholder: string
+      successMessage: string
+      downloadButton: string
+      outputFormat: string
+      fileCount: string
+      multipleFilesNote: string
+    }
+    pdfMerge: {
+      title: string
+      description: string
+      addToc: string
+      addBlankPage: string
+      uploadDescription: string
+      successMessage: string
+      downloadButton: string
+      fileCount: string
+      outputFormat: string
+      mergeOrder: string
+    }
+  }
+  images: {
+    convert: {
+      title: string
+      description: string
+      format: string
+      jpeg: string
+      png: string
+      webp: string
+      uploadDescription: string
+      formatOptions: string
+      formatSelect: string
+      formatPlaceholder: string
+      successMessage: string
+      downloadButton: string
+      outputFormat: string
+      fileCount: string
+      multipleFilesNote: string
+    }
+    resize: {
+      title: string
+      description: string
+      width: string
+      height: string
+      maintainAspectRatio: string
+      developing: string
+    }
+    crop: {
+      title: string
+      description: string
+      x: string
+      y: string
+      width: string
+      height: string
+      developing: string
+    }
+  }
+  about: {
+    title: string
+    description: string
+    features: string
+    github: string
+    version: string
+    author: string
+    license: string
+    contact: string
+    alertHeartFail: string
+    alertNetworkError: string
+    welcome: string
+    dataSecurityTitle: string
+    dataSecurity: string
+    freeServiceTitle: string
+    freeService: string
+    contactIdeasTitle: string
+    contactIdeas: string
+    heartTogether: string
+    thankYouSupport: string
+    clickToSupport: string
+    footer: string
+  }
+  processing: {
+    processing: string
+    processingProgress: string
+    processingCompleteMessage: string
+    uploadFilesFirst: string
+    selectDeduplicateColumn: string
+    selectValueColumn: string
+    selectSplitColumn: string
+    failedToGetColumns: string
+    deduplicateFailed: string
+    splitFailed: string
+    splitSuccess: string
+    downloadFailed: string
+    downloadSuccess: string
+    gettingColumnNames: string
+    filesWillBeZipped: string
+    cleanSuccessWithStats: string
+    cleanFailed: string
+    deduplicateSuccess: string
+    duplicatesRemoved: string
+    duplicationRate: string
+    removedDuplicates: string
+    dataComparison: string
+    deduplicatePreview: string
+    deduplicatePreviewDescription: string
+    emptyPreview: string
+    mergeSuccess: string
+    mergeSuccessWithCount: string
+    mergeFailed: string
+    mergePreview: string
+    mergePreviewDescription: string
+    pdfMergeFailed: string
+    pdfMergeSuccess: string
+    pdfMergeProcessing: string
+    pdfMergeProgress: string
+    pdfMergeComplete: string
+    minTwoFilesRequired: string
+    pdfConvertFailed: string
+    pdfConvertSuccess: string
+    pdfConvertProcessing: string
+    pdfConvertProgress: string
+    pdfConvertComplete: string
+    imageConvertFailed: string
+    imageConvertSuccess: string
+    imageConvertProcessing: string
+    imageConvertProgress: string
+    imageConvertComplete: string
+  }
+}
