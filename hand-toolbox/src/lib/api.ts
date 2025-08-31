@@ -1,6 +1,27 @@
 // API配置中心 - 统一管理所有API端点
-//export const API_BASE_URL = 'https://api.playharder.online';
-export const API_BASE_URL = 'http://127.0.0.1:8000';
+// 根据环境自动选择API地址
+export const API_BASE_URL = (() => {
+  // 开发环境：使用 npm run dev 启动
+  if (import.meta.env.DEV) {
+    console.log('🚀 开发环境：使用本地API地址 http://127.0.0.1:8000');
+    return 'http://127.0.0.1:8000';
+  }
+  // 预览环境：使用 npm run preview 启动
+  if (import.meta.env.MODE === 'preview') {
+    console.log('🌐 预览环境：使用生产API地址 https://api.playharder.online');
+    return 'https://api.playharder.online';
+  }
+  // 生产环境：使用 npm run build 构建后部署
+  console.log('🌐 生产环境：使用生产API地址 https://api.playharder.online');
+  return 'https://api.playharder.online';
+})();
+
+// 导出当前环境信息用于调试
+export const ENV_INFO = {
+  isDev: import.meta.env.DEV,
+  mode: import.meta.env.MODE,
+  baseUrl: API_BASE_URL
+};
 
 // 表格处理API
 export const TABLE_API = {
