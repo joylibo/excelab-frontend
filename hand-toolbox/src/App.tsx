@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Header } from "@/components/layout/Header"
+import { Footer } from "@/components/layout/Footer"
 import { TablesSection } from "@/components/sections/TablesSection"
 import { DocsSection } from "@/components/sections/DocsSection"
 import { ImagesSection } from "@/components/sections/ImagesSection"
@@ -38,6 +39,7 @@ function App() {
               {renderSection()}
             </div>
           </main>
+          <Footer />
         </div>
       </LanguageProvider>
     </ThemeProvider>
